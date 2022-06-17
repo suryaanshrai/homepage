@@ -1,20 +1,32 @@
 .header {
     background-color: #000;
     color: #fff;
-    font-size: 100px;
+    font-size: 400%;
     font-family: 'snell roundhand';
-    margin-bottom: 2rem;
-    padding: 2rem 1rem;
+    margin-bottom: 5%;
+    padding: 5%;
     text-align: center;
 }
-
+.text {
+    margin: 5%;
+    font-size: 150%;
+    text-align: center;
+    width: auto;
+    padding: 2%;
+}
 .subhead {
     background-color: chocolate; 
     color: white;
     text-align: centre;
-    padding-left: 2%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 50px;
+    padding: 10%;
+    font-size: 375%;
 }
+.insite{
+    height:750px;
+    width: 800px;
+    border-color: red;
+}
+table, th, td {
+    border: 5px solid white;
+    background-color: red;
+  }
