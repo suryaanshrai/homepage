@@ -6,6 +6,19 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
         <title>My Webpage</title>
+        <script>
+          document.addEventListener('DOMContentLoaded', function(){
+            let first = document.querySelector('#ssb').addEventListener('click', function(){
+              document.querySelector('#feedback1').innerHTML = "In the year 2020 I got reccommended by 24 SSB Bangalore. <a href=\"https://www.linkedin.com/feed/update/urn:li:activity:6935123019019223040/\" target=\"_blank\">Do check out this post!</a>";
+            });
+            let second = document.querySelector('#appointment').addEventListener('click', function(){
+              document.querySelector('#feedback2').innerHTML = "In the year 2019, I became the first day-scholar of my school to be appointed as a Captain.";
+            });
+            let third = document.querySelector('#torch').addEventListener('click', function(){
+              document.querySelector('#feedback3').innerHTML = "I had the honour of wearing a silver medal on my uniform for scoring 90.2% in class 10th";
+            });
+          });
+        </script>
     </head>
     <body>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,10 +38,23 @@
             <li class="nav-item">
                 <a class="nav-link" href="goals.html">Goals</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="hobbies.html">Hobbies</a>
-            </li>
           </ul>
           <p class="subhead">My Achievements</p>
+          <p class="text">Following are some events of my life which I consider special.</p>
+          <ul style="font-size: xx-large; color:red">
+            <li>
+              <button id="ssb">The SSB.</button>
+              <p id="feedback1"></p>
+            </li>
+            <li>
+              <button id="appointment">Leadership in Class 12th.</button>
+              <p id="feedback2"></p>
+            </li>
+            <li>
+              <button id="torch">Silver Torch Bearer.</button>
+              <p id="feedback3"></p>
+            </li>
+          </ul>
+          You can click on them to see more details of the events.
     </body>
 </html>
